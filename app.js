@@ -4,10 +4,8 @@ const squaresNumber = 500
 for(let i = 0; i < squaresNumber; i++) {
     const square = document.createElement('div')
     square.classList.add('square')
-
     square.addEventListener('mouseover', () => setColor(square))
     square.addEventListener('mouseleave', () => removeColor(square))
-
     board.append(square)
 }
 function setColor(element){
