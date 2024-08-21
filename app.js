@@ -1,8 +1,8 @@
-const board = document.querySelector('#board')
-const colors = ['#e74c3c', '#f80000', '#8e44ad', '#fff', '#3498db', '#ffff00', '#e67e22', '#000ff', '#2ecc71']
-const squaresNumber = 500
-for(let i = 0; i < squaresNumber; i++) {
-    const square = document.createElement('div')
+const board=document.querySelector('#board')
+const colors=['#e74c3c', '#f80000', '#8e44ad', '#fff', '#3498db', '#ffff00', '#e67e22', '#000ff', '#2ecc71']
+const squaresNumber=500
+for(let i=0;i<squaresNumber;i++){
+    const square=document.createElement('div')
     square.classList.add('square')
     square.addEventListener('mouseover', () => setColor(square))
     square.addEventListener('mouseleave', () => removeColor(square))
