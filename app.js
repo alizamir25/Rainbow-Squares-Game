@@ -10,12 +10,12 @@ for(let i=0;i<squaresNumber;i++){
 }
 function setColor(element){
     const color = getRandomColor()
-    element.style.backgroundColor = color
-    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+    element.style.backgroundColor=color
+    element.style.boxShadow=`0 0 2px ${color}, 0 0 10px ${color}`
 }
 function removeColor(element){
-    element.style.backgroundColor = '#272626'
-    element.style.boxShadow = `0 0 2px #000`
+    element.style.backgroundColor='#272626'
+    element.style.boxShadow=`0 0 2px #000`
 }
 function getRandomColor(){
    const index = Math.floor(Math.random() * colors.length)
